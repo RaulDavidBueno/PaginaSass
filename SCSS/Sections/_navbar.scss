@@ -1,0 +1,72 @@
+.nav{
+    width: 100vw;
+    height: 9vh;
+    background-color: $dark_blue;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    &_logo{
+        max-height: 80%;
+        
+    }
+    position: fixed ;
+}
+
+.contenedorBotones{
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    &_boton{
+        height: 4vh;
+        width: 12vw;
+        border-radius: 15px;
+        margin-right: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        p{
+            max-width: 90%;
+            
+            font-size: 100%;
+            font-family: 'Lato', sans-serif;
+            font-weight: 700;
+            margin-left: 5px;
+            
+            color: $light_pink;
+            text-align: center;
+            text-decoration: none;
+            outline: none;
+            border: none;
+        }
+        a{
+            text-decoration: none;
+        }
+        &:hover{
+            background-color: black;
+            cursor: pointer;
+            a{
+                text-decoration: none;
+                outline: none;
+            }
+            p{
+                color:  $pink;
+                border: none;
+            }
+        }
+        
+       
+    }
+}
+
+@media (max-width: 565px){
+    .contenedorBotones{
+        &_boton{
+            p{
+                
+            max-width: 90%;
+            
+            font-size: 3vw;
+            }
+        }
+    }
+}

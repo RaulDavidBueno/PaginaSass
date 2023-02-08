@@ -1,0 +1,75 @@
+.main {
+    top: 9vh;
+    padding-top: 9vh;
+    &_card {
+        background-color: $dark_purple;
+        display: flex;
+        
+        &_image{
+            width: 50vw;
+            img{
+                max-width: 100%;
+            }
+        }
+
+        &_textContainer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding-inline: 80px;
+            width: 50vw;
+            &--title {
+                font-family: 'Kalam', cursive;
+                font-weight: 700;
+                color: $white;
+                font-size: 2vw;
+            }
+
+            &--text {
+                margin-top: 10px;
+                font-family: 'Kalam', cursive;
+                font-weight: 400;
+                color: $light_pink;
+                font-size: 1.5vw;
+                text-align: center;
+            }
+
+        }
+    }
+
+    &_cardLeft {
+        background-color: $dark_purple;
+        display: flex;
+        flex-direction: row-reverse;
+        &_image {
+            max-width: 50vw;
+            img{
+                max-width: 100%;
+            }
+        }
+
+        &_textContainer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 50vw;
+            &--title {
+                font-family: 'Kalam', cursive;
+                font-weight: 400;
+                color: $pink;
+                font-size: 2vw;
+            }
+
+            &--text {
+                margin-top: 10px;
+                font-family: 'Kalam', cursive;
+                font-weight: 300;
+                color: $light_pink;
+                font-size: 1.5vw;
+                text-align: justify;
+            }
+
+        }
+    }
+}

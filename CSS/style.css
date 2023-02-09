@@ -12,44 +12,50 @@
   display: flex;
   align-items: center;
   padding-left: 10px;
+  justify-content: space-between;
+  padding-right: 40px;
   position: fixed; }
-  .nav_logo {
-    max-height: 80%; }
+  .nav a {
+    height: 100%; }
+    .nav a img {
+      max-height: 80%; }
 
 .contenedorBotones {
   display: flex;
   align-items: center;
   margin-left: 30px; }
-  .contenedorBotones_boton {
-    height: 4vh;
-    width: 12vw;
-    border-radius: 15px;
-    margin-right: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center; }
-    .contenedorBotones_boton p {
-      max-width: 90%;
-      font-size: 100%;
-      font-family: 'Lato', sans-serif;
-      font-weight: 700;
-      margin-left: 5px;
-      color: #f5d5e0;
-      text-align: center;
-      text-decoration: none;
-      outline: none;
-      border: none; }
-    .contenedorBotones_boton a {
-      text-decoration: none; }
-    .contenedorBotones_boton:hover {
-      background-color: black;
-      cursor: pointer; }
-      .contenedorBotones_boton:hover a {
+  .contenedorBotones ul {
+    display: flex; }
+    .contenedorBotones ul .boton {
+      height: 4vh;
+      width: 12vw;
+      border-radius: 15px;
+      margin-right: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .contenedorBotones ul .boton p {
+        max-width: 90%;
+        font-size: 100%;
+        font-family: 'Lato', sans-serif;
+        font-weight: 700;
+        margin-left: 5px;
+        color: #f5d5e0;
+        text-align: center;
         text-decoration: none;
-        outline: none; }
-      .contenedorBotones_boton:hover p {
-        color: #c874b2;
+        outline: none;
         border: none; }
+      .contenedorBotones ul .boton a {
+        text-decoration: none; }
+      .contenedorBotones ul .boton:hover {
+        background-color: black;
+        cursor: pointer; }
+        .contenedorBotones ul .boton:hover a {
+          text-decoration: none;
+          outline: none; }
+        .contenedorBotones ul .boton:hover p {
+          color: #c874b2;
+          border: none; }
 
 @media (max-width: 565px) {
   .contenedorBotones_boton p {
@@ -65,7 +71,8 @@
     .main_card_image {
       width: 50vw; }
       .main_card_image img {
-        max-width: 100%; }
+        max-width: 100%;
+        height: 100%; }
     .main_card_textContainer {
       display: flex;
       flex-direction: column;
@@ -92,7 +99,8 @@
     .main_cardLeft_image {
       max-width: 50vw; }
       .main_cardLeft_image img {
-        max-width: 100%; }
+        max-width: 100%;
+        height: 100%; }
     .main_cardLeft_textContainer {
       display: flex;
       flex-direction: column;
